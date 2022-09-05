@@ -1,8 +1,9 @@
-import "./App.scss";
-import { AppLayout } from "./layout";
+import React from 'react';
+import './App.scss';
+import { AppLayout } from './layout';
 
 function App() {
-  return <AppLayout />;
+	return <AppLayout />;
 }
 
 export default App;
