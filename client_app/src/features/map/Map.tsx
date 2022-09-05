@@ -1,9 +1,10 @@
 import L from "leaflet";
 import React from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
+import { Layers } from "./Layers";
 import "./Map.styles.scss";
 
-const position: [number, number] = [51.505, -0.09];
+const position: [number, number] = [51.67204, 39.1843];
 
 const Map: React.FC = () => {
   return (
@@ -16,10 +17,7 @@ const Map: React.FC = () => {
       minZoom={3}
       zoom={13}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+      <Layers />
     </MapContainer>
   );
 };

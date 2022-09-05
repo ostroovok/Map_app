@@ -36,7 +36,7 @@ const AppSider: React.FC<AppSiderProps> = ({ collapsed }) => {
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
       <div className="logo">
-        <span className="logo-text">{collapsed ? 'MP' : 'Map TODO'}</span>
+        <span className="logo-text">{collapsed ? 'MT' : 'Map TODO'}</span>
       </div>
       <Menu
         theme="dark"
